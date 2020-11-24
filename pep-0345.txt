@@ -496,7 +496,6 @@ to use other sequences like tuples or lists on the right side.
 
 The fields that benefit from this marker are:
 
-- Requires-Python
 - Requires-External
 - Requires-Dist
 - Provides-Dist
@@ -512,8 +511,8 @@ Summary of Differences From PEP 314
 
 * Changed fields:
 
-  - Platform
-  - Author
+  - Platform (syntax change)
+  - Author-email (change to optional field)
 
 * Added fields:
 

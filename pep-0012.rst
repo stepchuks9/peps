@@ -155,14 +155,14 @@ directions below.
 
 For reference, here are all of the possible header fields (everything
 in brackets should either be replaced or have the field removed if
-it has a leading `*` marking it as optional and it does not apply to
+it has a leading ``*`` marking it as optional and it does not apply to
 your PEP)::
 
   PEP: [NNN]
   Title: [...]
   Author: [Full Name <email at example.com>]
   Sponsor: *[Full Name <email at example.com>]
-  BDFL-Delegate:
+  PEP-Delegate:
   Discussions-To: *[...]
   Status: Draft
   Type: [Standards Track | Informational | Process]

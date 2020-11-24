@@ -4,10 +4,11 @@ Version: $Revision$
 Last-Modified: $Date$
 Author: Dustin Ingram <di@python.org>,
         Pradyun Gedam <pradyunsg@gmail.com>
+        Sumana Harihareswara <sh@changeset.nyc>
 Sponsor: Paul Ganssle <paul@ganssle.io>
 BDFL-Delegate: TBD
 Discussions-To: https://discuss.python.org/t/pep-609-pypa-governance/
-Status: Draft
+Status: Active
 Type: Process
 Content-Type: text/x-rst
 Created: 05-Nov-2019
@@ -63,7 +64,9 @@ Relevant terms for groups of individual contributors used in this PEP:
   contribute or make proposals.
 
 **Packaging-WG members**:
-  As described in the `Packaging-WG Wiki page`_.
+  As described in the `Packaging-WG Wiki page`_. For clarity: there is no
+  formal relationship between the Packaging-WG and PyPA. This group is
+  only included in this list to disambiguate it from PyPA.
 
 Goals
 =====
@@ -132,6 +135,12 @@ As long as the project is adhering to the Code of Conduct and
 following specifications supported by the PyPA, the PyPA should only
 concerned with large, ecosystem-wide changes.
 
+Develop and maintain standalone Code of Conduct
+'''''''''''''''''''''''''''''''''''''''''''''''
+
+PyPA projects follow `the PSF Code of Conduct`_.
+
+
 Goals of the PyPA's Governance Model
 ------------------------------------
 
@@ -164,10 +173,11 @@ Python Steering Council has the final say in the acceptance of these
 interoperability specifications.
 
 It is expected (but not required) that the Python Steering Council
-delegates the authority to approve or reject PEPs to individuals
-within the PyPA community. At the time of writing (November 2019), the
-Python Steering Council has `standing delegations`_ for currently
-active packaging interoperability specifications.
+would delegate authority to sponsor and/or approve/reject PEPs related
+to packaging interoperability specifications, to individuals within the
+PyPA community. At the time of writing (June 2020), the Python Steering
+Council has `standing delegations`_ for currently active packaging
+interoperability specifications.
 
 The details of the process of proposing and updating the
 interoperability specifications are described in the `PyPA
@@ -185,8 +195,8 @@ when a PyPA committer (not the proposer) seconds the proposal.
 
 The proposal will be put to a vote on the `PyPA-Committers`_ mailing
 list, over a 7 day period. Each PyPA committer can vote once, and can
-choose one of ``+1`` and ``-1``. If at least two thirds of voters vote
-``+1``, then the vote succeeds.
+choose one of ``+1`` and ``-1``. If at least two thirds of recorded
+votes are ``+1``, then the vote succeeds.
 
 PyPA committer votes are required for, and limited to, the following
 kinds of proposals:
@@ -230,6 +240,23 @@ If the request is not opposed by another committer of the same project
 over a 7 day period, the project would leave the PyPA and be
 transferred out of the PyPA organization as per the request.
 
+Code of Conduct enforcement
+'''''''''''''''''''''''''''
+
+Each project that is a part of the PyPA organization follows `the PSF
+Code of Conduct`_, including its incident reporting guidelines and
+enforcement procedures.
+
+PyPA members are responsible for leading by example. PyPA members
+occasionally may need to more explicitly moderate behavior in their
+projects, and each project that is a part of the PyPA organization
+must designate at least one PyPA member as available to contact in
+case of a Code of Conduct incident. If told of any Code of Conduct
+incidents involving their projects, PyPA members are expected to
+report those incidents up to `the PSF Conduct WG`_, for recording
+purposes and for potential assistance.
+
+
 References
 ==========
 
@@ -239,7 +266,8 @@ References
 .. _PyPA-Committers: https://mail.python.org/mm3/mailman3/lists/pypa-committers.python.org/
 .. _Packaging-WG Wiki page: https://wiki.python.org/psf/PackagingWG
 .. _standing delegations: https://github.com/python/steering-council/blob/master/process/standing-delegations.md#pypa-delegations
-
+.. _the PSF Code of Conduct: https://www.python.org/psf/conduct/
+.. _the PSF Conduct WG: https://wiki.python.org/psf/ConductWG/Charter
 
 Copyright
 =========

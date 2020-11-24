@@ -3,7 +3,7 @@ Title: New PEG parser for CPython
 Version: $Revision$
 Last-Modified: $Date$
 Author: Guido van Rossum <guido@python.org>,
- Pablo Galindo <pablogsal@gmail.com>,
+ Pablo Galindo <pablogsal@python.org>,
  Lysandros Nikolaou <lisandrosnik@gmail.com>
 Discussions-To: Python-Dev <python-dev@python.org>
 Status: Accepted
@@ -252,7 +252,7 @@ pipelines, in CPython this intermediate CST is not used by anything else (it is
 only indirectly exposed by the *parser* module and a surprisingly small part of
 the code in the CST production is reused in the module). Which is worse: the whole
 tree is kept in memory, keeping many branches that consist of chains of nodes with
-a single child. This has been shown to consume a considerable ammount of memory (for
+a single child. This has been shown to consume a considerable amount of memory (for
 instance in `bpo-26415: Excessive peak memory consumption by the Python
 parser <https://bugs.python.org/issue26415>`_).
 
@@ -479,7 +479,7 @@ object manipulations and some other required operations that are not directly
 related to the grammar.
 
 To indicate these actions each alternative can be followed by the action code
-inside curly-braces, which specifies the return value of the alternative:::
+inside curly-braces, which specifies the return value of the alternative::
 
    rule_name[return_type]:
        | first_alt1 first_alt2 { first_alt1 }
@@ -492,7 +492,7 @@ different possibilities:
 2. If not, a dummy name object gets returned (this case should be avoided).
 
 If the action is omitted and Python code is being generated, then a list
-with all the parsed expressions get returned (this is meant for debugging).
+with all the parsed expressions gets returned (this is meant for debugging).
 
 The full meta-grammar for the grammars supported by the PEG generator is:
 

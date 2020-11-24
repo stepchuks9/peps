@@ -728,7 +728,8 @@ complete sentences, with each sentence ending in a period.
 You should use two spaces after a sentence-ending period in multi-
 sentence comments, except after the final sentence.
 
-When writing English, follow Strunk and White.
+Ensure that your comments are clear and easily understandable to other 
+speakers of the language you are writing in.
 
 Python coders from non-English speaking countries: please write your
 comments in English, unless you are 120% sure that the code will never
@@ -784,7 +785,9 @@ Conventions for writing good documentation strings
       """
 
 - For one liner docstrings, please keep the closing ``"""`` on
-  the same line.
+  the same line::
+
+      """Return an ex-parrot."""
 
 
 Naming Conventions
@@ -853,7 +856,7 @@ case convention):
 - ``single_trailing_underscore_``: used by convention to avoid
   conflicts with Python keyword, e.g. ::
 
-      Tkinter.Toplevel(master, class_='ClassName')
+      tkinter.Toplevel(master, class_='ClassName')
 
 - ``__double_leading_underscore``: when naming a class attribute,
   invokes name mangling (inside class FooBar, ``__boo`` becomes
